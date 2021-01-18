@@ -476,7 +476,7 @@ function profile() {
         console.log("Test");
         client.messages
           .create({
-             body: 'Hello! Welcome to Serotonin. Your curret mood is ',
+             body: 'Hello! Welcome to Serotonin. Your monthly mood is, weekly mood is, and current mood is ',
              from: '+13236436196',
              to: '+14089212336'
            })
