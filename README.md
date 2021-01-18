@@ -1,2 +1,3 @@
 # serotonin
-Mood tracker chrome extension
+A mood tracker chrome extension
+

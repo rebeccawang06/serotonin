@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<style>
+
+#header {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden !important;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+    #buttonA {
+        text-align:center;
+    }
+    #buttonB {
+        text-align:center;
+    }
+    #buttonC {
+        text-align:center;
+    }
+    #buttonD {
+        text-align:center;
+    }
+    
+    
+    .calendarbutton {
+        color: #FFF;
+        background-color:rgb(148, 206, 233);
+        
+    }
+    .calendarbutton:hover {
+        color: rgb(0, 0, 0);
+        border-color: black;
+        transition: ease all 0.3s;
+        transform: scale(1.08);
+
+    }
+
+
+    #data {
+        color:white;
+        background-color:rgb(148, 206, 233);
+    }
+    #data:hover {
+        color: rgb(0, 0, 0);
+        border-color: black;
+        transition: ease all 0.3s;
+        transform: scale(1.08);
+
+
+    }
+
+    .diary {
+        color: #FFF;
+        background-color:rgb(148, 206, 233);
+    }
+    .diary:hover {
+        color: rgb(0, 0, 0);
+        border-color: black;
+        transition: ease all 0.3s;
+        transform: scale(1.08);
+
+    }
+
+    .profile {
+        color: #FFF;
+        background-color:rgb(148, 206, 233);
+    }
+    .profile:hover {
+        color: rgb(0, 0, 0);
+        border-color: black;
+        transition: ease all 0.3s;
+        transform: scale(1.08);
+
+
+    }
+
+    #header {
+        display: flex;
+    }
+
+    img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+#buttonA::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dfe2ea;
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: .3s;
+}
+
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+#diary {
+    padding: 40px;
+}
+
+#notes {
+    margin-bottom: 100px;
+}
+
+#myNotes {
+    padding: 40px;
+}
+
+
+</style>
+<body>
+    
+
+
+<div id = "options">
+    <div>
+        <div id="header">
+            <div id="buttonA">
+                <p><button type="button" class = "calendarbutton" id="view-settings">Calendar</button></p>
+            </div>
+            <div id="buttonB">
+                <p><button type="button" class = "databutton" id="data">Data</button></p>
+            </div>
+            <div id="buttonD">
+                <p><button type="button" class = "diary" id="di"> Notes</button></p>
+            </div>
+            <div id="buttonC">
+                <p><button type="button" class = "profile" id="pro"> Profile</button></p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id = "moods"> 
+        <img src="https://i.ibb.co/mNS50LM/excited.png" alt="excited" id = "excited" class="image vert-move" width = "75" height = "60" title="this will be displayed as a tooltip">
+        <img src= "https://i.ibb.co/s9VtQ4S/confused.png" alt="confused" id = "confused" class="image vert-move" width = "75" height = "60">
+        <img src= "https://i.ibb.co/9pXwMtp/ok.png" alt="ok" id = "ok" class="image vert-move" width = "75" height = "60">
+        <img src= "https://i.ibb.co/mhjnVrM/depressed.png" alt="ok" id = "sad" class="image vert-move" width = "75" height = "60">
+        <img src= "https://i.ibb.co/KbdRwYm/mad.png" alt="ok" id = "mad" class="image vert-move" width = "75" height = "60">
+        <img src= "https://i.ibb.co/x7xSBB4/explosive.png" alt="explosive" id = "explosive" class="image vert-move" width = "75" height = "60">
+
+    </div>
+
+<script src="popup.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+
+
+
+
