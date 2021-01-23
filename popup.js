@@ -700,3 +700,4 @@ document.getElementById('data').onclick = data;
 document.getElementById('di').onclick = diary;
 
 
+
