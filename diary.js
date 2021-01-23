@@ -4,7 +4,7 @@ form.noteText = document.querySelector('#formNoteText');
 form.addButton = document.querySelector('#formAddButton');
 form.color = document.querySelector('#formColor');
 
-const notes = document.querySelector('#notes');
+const notes = document.querySelector('#notes'); 
 
 form.noteText.focus();
 
